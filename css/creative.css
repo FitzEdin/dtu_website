@@ -254,11 +254,14 @@ aside {
 .navbar-default .nav > li.active > a:focus
 .navbar-default.affix .nav > li.active > a,
 .navbar-default.affix .nav > li.active > a:focus {
+  font-family: 'keystone-font-medium';
   color: var(--secondary) !important;
   background-color: transparent;
 }
 .navbar-default .nav > li.active > a:hover,
 .navbar-default .nav > li.active > a:focus:hover {
+  font-family: 'keystone-font-medium';
+  color: var(--secondary) !important;
   background-color: transparent;
 }
 /*CTA in menu*/
@@ -322,12 +325,14 @@ aside {
   }
   .navbar-default .nav > li.active > a,
   .navbar-default .nav > li.active > a:focus {
-    color: var(--white) !important;
+    font-family: 'keystone-font-medium';
+    color: var(--secondary) !important;
     background-color: transparent;
   }
   .navbar-default.affix .nav > li.active > a,
   .navbar-default.affix .nav > li.active > a:focus {
-    color: var(--primary-text) !important;
+    font-family: 'keystone-font-medium';
+    color: var(--secondary) !important;
     background-color: transparent;
   }
   /*colour of menu CTA when page is scrolled down*/
