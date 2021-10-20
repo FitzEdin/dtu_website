@@ -287,7 +287,7 @@ aside {
   .navbar-default .navbar-header .navbar-brand,
   .navbar-default .navbar-header .navbar-brand:hover,
   .navbar-default .navbar-header .navbar-brand:focus {
-    color: var(--primary-text);
+    color: var(--secondary);
     font-size: 28px;
     letter-spacing: 1.4px;
   }
@@ -453,11 +453,12 @@ header .header-content .header-content-inner .tagline {
   width: 80%;
   margin: 0 auto;
   font-family: 'keystone-tagline-font', serif;
+  text-shadow: 0.5px 0.5px 0.5px var(--black);
+  color: var(--primary-text);
   margin-top: 0px;
   margin-bottom: 0;
   font-size: 42px;
   line-height: 1.6;
-  color: var(--white);
 }
 header .header-content .header-content-inner hr {
   margin: 30px auto;
@@ -468,6 +469,7 @@ header .header-content .header-content-inner p {
   line-height: 1.5;
 
   font-family: 'keystone-font-medium', sans-serif;
+  text-shadow: 0.5px 0.5px 0.5px var(--black);
   color: var(--primary-text);
   font-size: 24px;
 
