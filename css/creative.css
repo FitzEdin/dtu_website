@@ -127,9 +127,9 @@ h6 {
   /* text-shadow: 0.5px 0.5px 0.5px #d1d1d1; */
 }
 #footer .section-heading {
-  font-size: 32px;
-  font-family: 'keystone-title-font', sans-serif;
-  color: var(--primary-text);
+  font-size: 48px;
+  font-family: 'keystone-tagline-font', sans-serif;
+  color: var(--secondary);
   text-transform: uppercase;
   letter-spacing: 4px;
 }
@@ -137,7 +137,7 @@ h6 {
   font-size: 16px;
   font-family: 'keystone-font-light', sans-serif;
   color: var(--primary-text);
-  letter-spacing: 2px;
+  letter-spacing: 2.5px;
   margin-bottom: 24px;
 }
 #footer .footer-info {
@@ -154,9 +154,10 @@ h6 {
 }
 #footer .footer-info .footer-email a {
   font-size: 18px;
-  font-family: 'keystone-font-regular', sans-serif;
-  color: var(--primary-text);
+  font-family: 'keystone-font-medium', sans-serif;
+  color: var(--secondary);
   letter-spacing: 2px;
+  margin-bottom: 8px;
 }
 #footer .footer-copyright {
   font-size: 16px;
@@ -350,7 +351,7 @@ aside {
 header {
   position: relative;
   width: 100%;
-  height: 60%;
+  height: 90%;
 
   /* rgba(48,142,250,0.9),
   rgba(49,148,7,0.9) */
