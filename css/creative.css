@@ -126,6 +126,10 @@ h6 {
   text-align: center;
   /* text-shadow: 0.5px 0.5px 0.5px #d1d1d1; */
 }
+
+#footer .container {
+  margin: 0 60px;
+}
 #footer .section-heading {
   font-size: 48px;
   font-family: 'keystone-tagline-font', sans-serif;
@@ -478,11 +482,6 @@ header .header-content .header-content-inner p {
   /* text-shadow: 0.5px 0.5px 0.5px rgb(0,0,0); */
 }
 
-
-.events .header-content .header-content-inner .tagline {
-  font-size: 32px;
-}
-
 @media (min-width: 948px) {
   header {
     height: 90%;
@@ -505,9 +504,6 @@ header .header-content .header-content-inner p {
     font-size: 84px;
     line-height: 1.4;
     margin-top: 0;
-  }
-  .events .header-content .header-content-inner .tagline {
-    font-size: 56px;
   }
   header .header-content .header-content-inner p {
     font-size: 36px;
@@ -539,9 +535,6 @@ header .header-content .header-content-inner p {
     line-height: 1.4;
     margin-top: 0;
   }
-  .events .header-content .header-content-inner .tagline {
-    font-size: 48px;
-  }
   header .header-content .header-content-inner p {
     font-size: 28px;
     max-width: 90%;
@@ -552,9 +545,6 @@ header .header-content .header-content-inner p {
 @media (max-width: 468px) {
   header .header-content .header-content-inner .tagline {
     font-size: 36px;
-  }
-  .events .header-content .header-content-inner .tagline {
-    font-size: 24px;
   }
   header .header-content .header-content-inner p {
     width: 90%;
@@ -589,9 +579,6 @@ header .header-content .header-content-inner p {
   header {
     height: 100%;
   }
-}
-.bob {
-  font-family: 'keystone-font-medium';
 }
 
 .service-box {
