@@ -28,13 +28,16 @@
 
 <body id="page-top">
 
+    <!-- Top Nav Bar; the green bar at the very top of the page -->
     <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
         <div class="container-fluid navbar-content">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
+                <!-- Menu icon that appears on smaller screens to access the regular links -->
                 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
                     <span class="sr-only">Toggle navigation</span> <i class="fa fa-bars"></i>
                 </button>
+                <!-- <img src="img/coat_of_arms.png" alt=""> -->
                 <a class="navbar-brand page-scroll" href="#page-top">Digital Training
                   <!-- <p class="navbar-subrand text-center">Department of Technology</p> -->
                 </a>
@@ -43,7 +46,7 @@
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
-                    <li>
+                    <li class="active">
                         <a class="page-scroll" href="courses/index.html">Courses</a>
                     </li>
                     <li>
@@ -53,7 +56,8 @@
                         <a class="page-scroll" href="exams/index.html">Exams</a>
                     </li>
                     <li>
-                        <a class="page-scroll call-to-action-menu-item" href="join.html">Survey</a>
+                        <!-- TODO: edit the href value to reflect link to form/page -->
+                        <a class="page-scroll call-to-action-menu-item" href="">Survey</a>
                     </li>
                     <!-- <li>
                         <a class="page-scroll" href="login.html">LOG IN</a>
@@ -65,19 +69,27 @@
         <!-- /.container-fluid -->
     </nav>
 
+    <!-- change the class of this header to reflect the particular page
+    the options for classes are: home, training, exams, courses
+    this class changes the background in the header; find the images being
+    referred to in css/creative.css; search "header.exams", for example,
+    to find these references and make necessary changes -->
     <header class="home">
         <div class="header-content">
             <div class="header-content-inner">
-              <!-- add .text-left to fit actual design -->
+                <!-- add .text-left to fit actual design -->
                 <h1 class="tagline">Building a WorkForce <br/>for the 21st Century</h1>
                 <p>
                   Equipping public officers with digital skills
                 </p>
-                <a href="join.html"
-                class="btn btn-primary">
-                Take Staff Survey
+                <!-- TODO: change the href value to add link to form/page -->
+                <a href="" class="btn btn-primary">
+                  Take Staff Survey
                 </a>
-                <a href="" class="btn btn-secondary">Get Course List</a>
+                <!-- TODO: change the href value to add link to form/page -->
+                <a href="" class="btn btn-secondary">
+                  Get Course List
+                </a>
             </div>
         </div>
     </header>
@@ -167,14 +179,12 @@
     <section id="footer">
         <div class="container">
             <div class="row">
-                <div class="col-md-6 text-left footer-info">
+
+                <!-- the brand info on larger screens, invisible on smaller screens -->
+                <div class="col-md-6 text-left footer-info hidden-xs hidden-sm">
                     <h2 class="section-heading">Digital Training</h2>
                     <p class="footer-location">
-                      Department of Technology, Govt of St Kitts-Nevis
-                      <span class="hidden-lg hidden-md">
-                        <br/>3 CAP Southwell Industrial Park
-                        <br/>Basseterre, St Kitts
-                      </span>
+                      Dept of Technology, Government of St Kitts-Nevis
                     </p>
 
                     <div class="text-left footer-email">
@@ -185,13 +195,26 @@
                         <p class="footer-location">
                           National ICT Center<br/>
                           3 CAP Southwell Industrial Park<br/>
-                          Basseterre, St Kitts
+                          Basseterre, St Kitts KN0106
                         </p>
                     </div>
                 </div>
 
-                <div class="col-lg-6 col-xs-12 footer-info">
-                    <div class="col-xs-4 text-left footer-link">
+
+                <!-- the brand info on smaller screens, invisible on larger screens -->
+                <div class="col-xs-12 col-xs-offset-2 text-center footer-info hidden-md hidden-lg">
+                    <img src="coat_of_arms.png" alt="" style="width: 120px;">
+                    <h2 class="section-heading">Digital Training</h2>
+                    <p class="footer-location">
+                      Department of Technology, Govt of St Kitts-Nevis
+                    </p>
+                </div>
+
+
+
+                <!-- set of quick links in footer -->
+                <div class="col-md-6 col-xs-12 footer-info">
+                    <div class="col-xs-4 text-center footer-link">
                       <ul>
                         <li><p class="page-scroll" href="#">Services</p></li>
                         <li><a class="page-scroll" href="training/index.html">Courses</a></li>
@@ -199,16 +222,18 @@
                         <li><a class="page-scroll" href="exams/index.html">Exams</a></li>
                       </ul>
                     </div>
-                    <div class="col-xs-4 text-left footer-link">
+                    <div class="col-xs-4 text-center footer-link">
                       <ul>
+                        <!-- TODO: edit href values to reflect appropriate page/link -->
                         <li><p class="page-scroll" href="#">About</p></li>
                         <li><a class="page-scroll" href="training/index.html">Staff</a></li>
                         <li><a class="page-scroll" href="spaces/index.html">Contact</a></li>
                         <li><a class="page-scroll" href="exams/index.html">Partners</a></li>
                       </ul>
                     </div>
-                    <div class="col-xs-4 text-left footer-link">
+                    <div class="col-xs-4 text-center footer-link">
                       <ul>
+                        <!-- TODO: edit href values to reflect appropriate page/link -->
                         <li><p class="page-scroll" href="#">Legal</p></li>
                         <li><a class="page-scroll" href="training/index.html">Privacy</a></li>
                         <li><a class="page-scroll" href="spaces/index.html">Terms</a></li>
