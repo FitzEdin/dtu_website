@@ -33,12 +33,12 @@ body {
 /* #fcfcfc; /*text-primary */
 /* #1b2021; /*text-secondary */
 :root {
-  --primary: #134F02;
-  --primary-text: #fcfcfc;
-  --secondary: #ffce2a;
-  --secondary-text: #1b2021;
-  --black: #1b2021;
-  --white: #fcfcfc;
+  --primary: #134F02;        /*green*/
+  --primary-text: #fcfcfc;   /*white*/
+  --secondary: #ffce2a;      /*yellow*/
+  --secondary-text: #1b2021; /*black*/
+  --black: #1b2021;          /*black*/
+  --white: #fcfcfc;          /*white*/
 }
 
 
@@ -386,6 +386,7 @@ header {
   /* background: rgba(35,176,162,0.1), url('../img/portfolio/fullsize/6.jpg'); */
 }
 header.home {
+  height: 100%;
   background:
     linear-gradient(
     -45deg,
@@ -401,6 +402,7 @@ header.home {
   background-position: center;
 }
 header.spaces {
+  height: 100%;
   background:
     linear-gradient(
     -45deg,
@@ -416,6 +418,7 @@ header.spaces {
   background-position: center;
 }
 header.training {
+  height: 100%;
   background:
     linear-gradient(
     -45deg,
@@ -431,13 +434,14 @@ header.training {
   background-position: center;
 }
 header.exams {
+  height: 100%;
   background:
     linear-gradient(
     -45deg,
-    rgba(27,32,33,0.7),
-    rgba(27,32,33,0.7)
+    rgba(27,32,33,0.6),
+    rgba(27,32,33,0.6)
     ),
-    url('../img/exams.jpg');
+    url('../img/exams.png');
 
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -579,12 +583,47 @@ header .header-content .header-content-inner p {
   }
 }
 
+.header-content .box {
+  /* max-width: 20%; */
+  margin: 10px 2.5%;
+  padding: 10px;
+  border-radius: 9px;
+  background-color: var(--secondary);
+}
+.header-content .box .service-description {
+  font-family: "keystone-title-font";
+  font-size: 20px;
+  margin-bottom: -4px;
+  padding: 10px 0;
+  color: var(--secondary-text); /*TODO: change later*/
+  line-height: 2.5;
+}
+
+.header-content #special.box {
+  /* background-color: var(--primary); */
+  background-color: #FF5CF4;   /*pink for Girls in ICT*/
+}
+.header-content #special.box .service-description {
+  color: var(--primary-text); /*TODO: change later*/
+}
+
+.square {
+  width: 20%;
+  height: 0;
+  padding-top: 20%;
+  background-color: #ccc;
+  position: relative;
+}
+.content {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
 .service-box {
   max-width: 90%;
   margin: 10px auto;
-  padding: 24px 0;
-
-  /* box-shadow: 0 5px 15px rgba(34, 23, 17, 0.47); */
+  padding: 10px;
 }
 .service-box img {
   padding: 0px;
@@ -639,6 +678,9 @@ header .header-content .header-content-inner p {
   line-height: 1.2;
 }
 @media (min-width: 768px) {
+  .header-content .box {
+    max-width: 20%;
+  }
   .service-box .room {
     margin-top: 48px;
     margin-bottom: 48px;
