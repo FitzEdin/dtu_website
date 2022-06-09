@@ -39,6 +39,7 @@ body {
   --secondary-text: #1b2021; /*black*/
   --black: #1b2021;          /*black*/
   --white: #fcfcfc;          /*white*/
+  --grey: rgba(27,32,33,0.7);/*grey*/
 }
 
 
@@ -79,7 +80,7 @@ body {
 body {
   font-family: 'keystone-font-regular', sans-serif;
   color: var(--primary-text);
-  background-color: var(--white);
+  background-color: var(--grey);
   letter-spacing: 1px;
 }
 hr {
