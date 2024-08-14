@@ -23,7 +23,9 @@ body {
 /**
 // COLOURS //
 **/
-/* #134F02; /*primary */
+/* #134F02; /*primary - green */
+/* #063960; /* primary - blue */
+/* #FFCE2A; /*secondary */
 /* #FFCE2A; /*secondary */
 /* #ff7033; /*alert */
 
@@ -33,13 +35,12 @@ body {
 /* #fcfcfc; /*text-primary */
 /* #1b2021; /*text-secondary */
 :root {
-  --primary: #134F02;        /*green*/
+  --primary: #063960;        /*dark blue*/
   --primary-text: #fcfcfc;   /*white*/
-  --secondary: #ffce2a;      /*yellow*/
+  --secondary: #ffd447;      /*yellow*/
   --secondary-text: #1b2021; /*black*/
   --black: #1b2021;          /*black*/
   --white: #fcfcfc;          /*white*/
-  --grey: rgba(27,32,33,0.7);/*grey*/
 }
 
 
@@ -48,31 +49,31 @@ body {
 **/
 @font-face {
     font-family: keystone-title-font;
-    src: url("../fonts/Averta-Bold.otf");
+    src: url("../fonts/Mari-Bold.ttf");
 }
 @font-face {
     font-family: keystone-title-font-heavy;
-    src: url("../fonts/Averta-Black.otf");
+    src: url("../fonts/Mari-Black.ttf");
 }
 @font-face {
     font-family: keystone-font-light;
-    src: url("../fonts/Averta-Light.otf");
+    src: url("../fonts/Mari-Light.ttf");
 }
 @font-face {
     font-family: keystone-font-medium;
-    src: url("../fonts/Averta-SemiBold.otf");
+    src: url("../fonts/Mari-SemiBold.ttf");
 }
 @font-face {
     font-family: keystone-font-regular;
-    src: url("../fonts/Averta-Regular.otf");
+    src: url("../fonts/Mari-Regular.ttf");
 }
 @font-face {
     font-family: keystone-font-bold;
-    src: url("../fonts/Averta-Bold.otf");
+    src: url("../fonts/Mari-Bold.ttf");
 }
 @font-face {
     font-family: keystone-tagline-font;
-    src: url("../fonts/Averta-Black.otf");
+    src: url("../fonts/Mari-Black.ttf");
 }
 
 
@@ -80,7 +81,7 @@ body {
 body {
   font-family: 'keystone-font-regular', sans-serif;
   color: var(--primary-text);
-  background-color: var(--grey);
+  background-color: var(--white);
   letter-spacing: 1px;
 }
 hr {
@@ -397,9 +398,9 @@ header.home {
     url('../img/home.jpeg');
 
   -webkit-background-size: cover;
-  -moz-background-size: cover;
-  background-size: cover;
-  -o-background-size: cover;
+     -moz-background-size: cover;
+       -o-background-size: cover;
+          background-size: cover;
   background-position: center;
 }
 header.spaces {
@@ -413,9 +414,9 @@ header.spaces {
     url('../img/spaces.jpg');
 
   -webkit-background-size: cover;
-  -moz-background-size: cover;
-  background-size: cover;
-  -o-background-size: cover;
+     -moz-background-size: cover;
+       -o-background-size: cover;
+          background-size: cover;
   background-position: center;
 }
 header.training {
@@ -429,9 +430,11 @@ header.training {
     url('../img/training.jpg');
 
   -webkit-background-size: cover;
-  -moz-background-size: cover;
-  background-size: cover;
-  -o-background-size: cover;
+
+-webkit-background-size: cover;
+   -moz-background-size: cover;
+     -o-background-size: cover;
+        background-size: cover;
   background-position: center;
 }
 header.exams {
@@ -445,9 +448,25 @@ header.exams {
     url('../img/exams.png');
 
   -webkit-background-size: cover;
-  -moz-background-size: cover;
-  background-size: cover;
-  -o-background-size: cover;
+     -moz-background-size: cover;
+       -o-background-size: cover;
+          background-size: cover;
+  background-position: center;
+}
+header.small-biz {
+  height: 95%;
+  background:
+    linear-gradient(
+    -45deg,
+    rgba(27,32,33,0.7),
+    rgba(27,32,33,0.7)
+    ),
+    url('../img/header.png');
+
+  -webkit-background-size: cover;
+     -moz-background-size: cover;
+       -o-background-size: cover;
+          background-size: cover;
   background-position: center;
 }
 header .header-content {
@@ -568,12 +587,12 @@ header .header-content .header-content-inner p {
   }
   header .header-content .header-content-inner .tagline {
     width: 100%;
-    font-size: 96px;
-    line-height: 1.6;
-    margin-top: 0;
+    font-size: 84px;
+    line-height: 1.4;
+    margin-top: 36px;
   }
   header .header-content .header-content-inner p {
-    font-size: 48px;
+    font-size: 36px;
     margin-top: 50px;
     margin-bottom: 50px;
   }
@@ -593,16 +612,16 @@ header .header-content .header-content-inner p {
 }
 .header-content .box .service-description {
   font-family: "keystone-title-font";
-  font-size: 20px;
+  font-size: 18px;
   margin-bottom: -4px;
   padding: 10px 0;
   color: var(--secondary-text); /*TODO: change later*/
-  line-height: 2.5;
+  line-height: 1.8;
 }
 
 .header-content #special.box {
   /* background-color: var(--primary); */
-  background-color: #FF5CF4;   /*pink for Girls in ICT*/
+  background-color: #063960;   /*pink for Girls in ICT*/
 }
 .header-content #special.box .service-description {
   color: var(--primary-text); /*TODO: change later*/
@@ -726,7 +745,7 @@ header .header-content .header-content-inner p {
   .service-box .service-link,
   .service-box .service-description {
     font-size: 20px;
-    line-height: 2.5;
+    line-height: 1.4;
   }
 }
 

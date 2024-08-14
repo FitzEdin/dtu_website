@@ -26,15 +26,15 @@ body {
 }
 @font-face {
     font-family: keystone-font-light;
-    src: url("../fonts/Averta-Light.otf");
+    src: url("../fonts/Mari-Light.ttf");
 }
 @font-face {
     font-family: keystone-font-medium;
-    src: url("../fonts/Averta-Bold.otf");
+    src: url("../fonts/Mari-Bold.ttf");
 }
 @font-face {
     font-family: keystone-font-regular;
-    src: url("../fonts/Averta-Regular.otf");
+    src: url("../fonts/Mari-Regular.ttf");
 }
 @font-face {
     font-family: keystone-font-bold;
@@ -42,7 +42,7 @@ body {
 }
 @font-face {
     font-family: keystone-tagline-font-regular;
-    src: url("../fonts/Averta-Bold.otf");
+    src: url("../fonts/Mari-Bold.ttf");
 }
 
 
@@ -355,9 +355,13 @@ header .header-content .header-content-inner .tagline {
   margin-bottom: 0;
   font-size: 64px;
   line-height: 1.2;
-   text-shadow: 0.5px 0.5px 1px rgba(0,0,0, 0.6); 
+  text-shadow: 0.5px 0.5px 1px rgba(0,0,0, 0.6);
   /* color: rgba(58, 162, 216, 0.9); */
   color: rgba(255,255,255,0.9);
+}
+
+header .header-content .header-content-inner .date {
+  color: rgba(0,0,0, 0.6);
 }
 .tagline>h3 {
   font-size: 32px;
