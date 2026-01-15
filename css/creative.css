@@ -35,7 +35,7 @@ body {
 /* #fcfcfc; /*text-primary */
 /* #1b2021; /*text-secondary */
 :root {
-  --primary: #063960;        /*dark blue*/
+  --primary: #095086;        /*dark blue*/
   --primary-text: #fcfcfc;   /*white*/
   --secondary: #ffd447;      /*yellow*/
   --secondary-text: #1b2021; /*black*/
@@ -49,31 +49,45 @@ body {
 **/
 @font-face {
     font-family: keystone-title-font;
-    src: url("../fonts/Mari-Bold.ttf");
+    /* src: url("../fonts/Sandi-SemiBold.ttf"); */
+    src: url("../fonts/Avi-Bold.ttf");
+    /* src: url("../fonts/Mari-Bold.ttf"); */
 }
 @font-face {
     font-family: keystone-title-font-heavy;
-    src: url("../fonts/Mari-Black.ttf");
+    src: url("../fonts/Sandi-Bold.ttf");
+    /* src: url("../fonts/Avi-Bold.ttf"); */
+    /* src: url("../fonts/Mari-Black.ttf"); */
 }
 @font-face {
     font-family: keystone-font-light;
-    src: url("../fonts/Mari-Light.ttf");
+    src: url("../fonts/Sandi-Light.ttf");
+    /* src: url("../fonts/Avi-Light.ttf"); */
+    /* src: url("../fonts/Mari-Light.ttf"); */
 }
 @font-face {
     font-family: keystone-font-medium;
-    src: url("../fonts/Mari-SemiBold.ttf");
+    /* src: url("../fonts/Sandi-Medium.ttf"); */
+    src: url("../fonts/Avi-Regular.ttf");
+    /* src: url("../fonts/Mari-SemiBold.ttf"); */
 }
 @font-face {
     font-family: keystone-font-regular;
-    src: url("../fonts/Mari-Regular.ttf");
+    src: url("../fonts/Sandi-Regular.ttf");
+    /* src: url("../fonts/Avi-Regular.ttf"); */
+    /* src: url("../fonts/Mari-Regular.ttf"); */
 }
 @font-face {
     font-family: keystone-font-bold;
-    src: url("../fonts/Mari-Bold.ttf");
+    src: url("../fonts/Sandi-Bold.ttf");
+    /* src: url("../fonts/Avi-Bold.ttf"); */
+    /* src: url("../fonts/Mari-Bold.ttf"); */
 }
 @font-face {
     font-family: keystone-tagline-font;
-    src: url("../fonts/Mari-Black.ttf");
+    /* src: url("../fonts/Sandi-Bold.ttf"); */
+    src: url("../fonts/Avi-Bold.ttf");
+    /* src: url("../fonts/Mari-Black.ttf"); */
 }
 
 
@@ -133,11 +147,11 @@ h6 {
   margin: 0 auto; /* setting own margin breaks at screens wider than 1200px */
 }
 #footer .section-heading {
-  font-size: 56px;
+  font-size: 52px;
   font-family: 'keystone-tagline-font', sans-serif;
   color: var(--secondary);
   text-transform: uppercase;
-  letter-spacing: 4px;
+  letter-spacing: 2px;
   margin-top: 0;
 }
 #footer .footer-location {
@@ -218,9 +232,10 @@ aside {
   height: 60px;
 } */
 .navbar-content {
+  padding-top: 10px;
   margin-left: 4%;
   margin-right: 4%;
-  height: 54px;
+  height: 72px;
 }
 .navbar-default {
   background-color: var(--primary);
@@ -279,7 +294,7 @@ aside {
 .navbar-default .nav > li.active > a:focus,
 .navbar-default.affix .nav > li.active > a,
 .navbar-default.affix .nav > li.active > a:focus {
-  font-family: 'keystone-font-medium';
+  font-family: 'keystone-font-bold';
   color: var(--primary-text) !important;
   background-color: transparent;
 }
@@ -287,7 +302,7 @@ aside {
 .navbar-default .nav > li.active > a:focus:hover,
 .navbar-default.affix .nav > li.active > a:hover,
 .navbar-default.affix .nav > li.active > a:focus:hover {
-  font-family: 'keystone-font-medium';
+  font-family: 'keystone-font-bold';
   color: var(--secondary) !important;
   background-color: transparent;
 }
@@ -354,7 +369,7 @@ aside {
   .navbar-default .nav > li.active > a:focus,
   .navbar-default.affix .nav > li.active > a,
   .navbar-default.affix .nav > li.active > a:focus {
-    font-family: 'keystone-font-medium';
+    font-family: 'keystone-font-bold';
     color: var(--primary-text) !important;
     background-color: transparent;
   }
@@ -408,14 +423,14 @@ header.home {
   background-position: center;
 }
 header.spaces {
-  height: 100%;
+  height: 90%;
   background:
     linear-gradient(
-    -45deg,
-    rgba(27,32,33,0.7),
-    rgba(27,32,33,0.7)
+    0deg,
+    rgba(20,20,20,0.85),
+    rgba(20,20,20,0.70)
     ),
-    url('../img/spaces.jpg');
+    url('../img/spaces2.png');
 
   -webkit-background-size: cover;
      -moz-background-size: cover;
@@ -424,25 +439,25 @@ header.spaces {
   background-position: center;
 }
 header.training {
-  height: 100%;
+  height: 90%;
   background:
     linear-gradient(
-    -45deg,
-    rgba(27,32,33,0.7),
-    rgba(27,32,33,0.7)
+    0deg,
+    rgba(20,20,20,0.85),
+    rgba(20,20,20,0.75)
     ),
-    url('../img/training.jpg');
+    url('../img/training.png');
 
   -webkit-background-size: cover;
 
--webkit-background-size: cover;
-   -moz-background-size: cover;
-     -o-background-size: cover;
-        background-size: cover;
+  -webkit-background-size: cover;
+     -moz-background-size: cover;
+       -o-background-size: cover;
+          background-size: cover;
   background-position: center;
 }
 header.exams {
-  height: 100%;
+  height: 90%;
   background:
     linear-gradient(
     -45deg,
@@ -525,7 +540,7 @@ header .header-content .header-content-inner p {
 
 .header-content #special.box {
   /* background-color: var(--primary); */
-  background-color: #063960;   /*pink for Girls in ICT*/
+  background-color: var(--primary);   /*pink for Girls in ICT*/
 }
 .header-content #special.box .service-description {
   color: var(--primary-text); /*TODO: change later*/
@@ -967,7 +982,7 @@ fieldset[disabled] .btn-secondary.active {
 .btn-default {
   font-family: 'keystone-font-bold', sans-serif;
   font-size: 28px;
-  color: #fcfcfc;
+  color: var(--white);
   background-color: #40404088;
   border-color: #ededed;
   -webkit-transition: all 0.35s;
@@ -982,7 +997,7 @@ fieldset[disabled] .btn-secondary.active {
 .btn-default.active,
 .open > .dropdown-toggle.btn-default {
   color: #404040;
-  background-color: #fcfcfc;
+  background-color: var(--white);
   border-color: #ededed;
 }
 .btn-default:active,
