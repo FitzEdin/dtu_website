@@ -36,11 +36,13 @@ body {
 /* #1b2021; /*text-secondary */
 :root {
   --primary: #095086;        /*dark blue*/
+  --primary-dark: #042946;   /*darker blue*/
   --primary-text: #fcfcfc;   /*white*/
   --secondary: #ffd447;      /*yellow*/
   --secondary-text: #1b2021; /*black*/
   --black: #1b2021;          /*black*/
   --white: #fcfcfc;          /*white*/
+  --grey: #dcebf7;           /*grey*/
 }
 
 
@@ -99,7 +101,7 @@ body {
   letter-spacing: 1px;
 }
 hr {
-  border-color: var(--primary);
+  border-color: var(--primary-dark);
   border-width: 1px;
   max-width: 150px;
 }
@@ -112,7 +114,7 @@ hr.light {
   transition: all 0.35s;
   text-decoration: none;
   /* color: #ff9736; */
-  /* color: var(--primary); */
+  /* color: var(--primary-dark); */
 /*} */
 a:hover,
 a:focus
@@ -238,8 +240,8 @@ aside {
   height: 72px;
 }
 .navbar-default {
-  background-color: var(--primary);
-  border-color: var(--primary);
+  background-color: var(--primary-dark);
+  border-color: var(--black);
   font-family: 'keystone-font-light', sans-serif;
   -webkit-transition: all 0.35s;
   -moz-transition: all 0.35s;
@@ -270,7 +272,7 @@ aside {
   font-size: 18px;
   color: var(--secondary);
   border-color: var(--secondary);
-  background-color: var(--primary);
+  background-color: var(--primary-dark);
 
   margin-top: 8px;
   margin-bottom: 6px;
@@ -323,8 +325,8 @@ aside {
 }
 @media (min-width: 768px) {
   .navbar-default {
-    background-color: var(--primary);
-    border-color: var(--primary);
+    background-color: var(--primary-dark);
+    border-color: var(--black);
   }
   .navbar-default .navbar-header .navbar-brand,
   .navbar-default .navbar-header .navbar-brand:hover,
@@ -346,8 +348,8 @@ aside {
     color: var(--secondary);
   }
   .navbar-default.affix {
-    background-color: var(--primary);
-    border-color: var(--primary);
+    background-color: var(--primary-dark);
+    border-color: var(--black);
   }
   .navbar-default.affix .navbar-header .navbar-brand {
     color: var(--primary-text);
@@ -539,8 +541,8 @@ header .header-content .header-content-inner p {
 }
 
 .header-content #special.box {
-  /* background-color: var(--primary); */
-  background-color: var(--primary);   /*pink for Girls in ICT*/
+  /* background-color: var(--primary-dark); */
+  background-color: var(--primary-dark);   /*pink for Girls in ICT*/
 }
 .header-content #special.box .service-description {
   color: var(--primary-text); /*TODO: change later*/
@@ -670,7 +672,7 @@ header .header-content .header-content-inner p {
 }
 
 #special.box {
-  /* background-color: var(--primary); */
+  /* background-color: var(--primary-dark); */
   background-color: var(--accent);   /*pink for Girls in ICT*/
 }
 #special.box .service-description {
@@ -779,7 +781,7 @@ header .header-content .header-content-inner p {
   }
 }
 .service-link {
-  color: var(--primary); /*TODO: change later*/
+  color: var(--primary-dark); /*TODO: change later*/
   font-family: 'keystone-font-bold';
   margin-bottom: 20px;
   font-size: 24px;
@@ -815,7 +817,7 @@ header .header-content .header-content-inner p {
   padding-left: 0;
 }
 
-/*
+
 .grid {
     display: grid;
     grid-template-columns: 1fr;
@@ -823,40 +825,48 @@ header .header-content .header-content-inner p {
 }
  @media (min-width: 768px) {
     .grid {
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(2, 1fr);
     }
 }
 .card {
-    text-align: center;
-    background: var(--background);
+    text-align: left;
+
+    background: var(--black);
+
     border-radius: 1rem;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    padding: 1.5rem;
+    
+    padding: 2rem;
     transition: transform 0.35s ease;
 }
 .card:hover {
-    background: var(--background);
+    /* background: var(--background); */
     transform: scale(1.01);
 }
 .card h2 {
-    /* font-size: 1.5rem; */
-    /* line-height: 1.5rem; 
-    color: var(--primary);
+    font-size: 4rem;
+    text-align: center;
+    line-height: 3rem; 
+    color: var(--primary-text);
 
-    font-family: 'keystone-title-font-heavy', serif;
+    font-family: 'keystone-font-medium', serif;
     font-weight: 400;
     font-style: normal;
 
-    margin-top: 0.4rem;
-    margin-bottom: 0.4rem;
-}
-.card p {
-    font-family: 'keystone-font-regular', serif;
-    font-weight: 400;
-    /* font-size: 1.2rem; 
-    color: var(--primary);
     margin-top: 1rem;
     margin-bottom: 1rem;
+}
+.card p {
+    text-align: justify;
+    line-height: 3rem; 
+    color: var(--secondary);
+    font-family: 'keystone-font-regular', serif;
+    
+    font-weight: 400;
+    font-size: 1.8rem; 
+    
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
 }
 .benefits {
     margin-top: 1rem;
@@ -864,14 +874,27 @@ header .header-content .header-content-inner p {
     padding: 0;
 }
 .benefits p {
+    color: var(--primary-text);
     font-family: 'keystone-font-regular', serif;
-    text-align: center;
-    /* font-size: 1.2rem; 
-    color: var(--primary);
+    
+    text-align: left;
+    font-size: 1.6rem;
+    
     margin-top: 1rem;
     margin-bottom: 1rem;
 }
-*/
+
+#services {
+  background-color: var(--primary);/*#042946;*/
+  padding-bottom: 96px;
+}
+
+#services .accent-card {
+  background-color: var(--primary-dark);
+}
+#services .accent-card h2 {
+}
+
 
 /**
 //    BUTTONS    //
@@ -920,13 +943,13 @@ fieldset[disabled] .btn-primary:active,
 .btn-primary.disabled.active,
 .btn-primary[disabled].active,
 fieldset[disabled] .btn-primary.active {
-  background-color: var(--primary);
-  border-color: var(--primary);
+  background-color: var(--primary-dark);
+  border-color: var(--primary-dark);
 }
 
 /* Secondary Button */
 .btn-secondary .badge {
-  color: var(--primary);
+  color: var(--primary-dark);
   background-color: var(--white);
 }
 .btn-secondary {
@@ -971,11 +994,11 @@ fieldset[disabled] .btn-secondary:active,
 .btn-secondary.disabled.active,
 .btn-secondary[disabled].active,
 fieldset[disabled] .btn-secondary.active {
-  background-color: var(--primary);
-  border-color: var(--primary);
+  background-color: var(--primary-dark);
+  border-color: var(--primary-dark);
 }
 .btn-secondary .badge {
-  color: var(--primary);
+  color: var(--primary-dark);
   background-color: var(--white);
 }
 
