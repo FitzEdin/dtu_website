@@ -39,6 +39,7 @@ body {
   --primary-dark: #042946;   /*darker blue*/
   --primary-text: #fcfcfc;   /*white*/
   --secondary: #ffd447;      /*yellow*/
+  --accent-text: #f4d778;      /*yellow*/
   --secondary-text: #1b2021; /*black*/
   --black: #1b2021;          /*black*/
   --white: #fcfcfc;          /*white*/
@@ -425,7 +426,7 @@ header.home {
   background-position: center;
 }
 header.spaces {
-  height: 90%;
+  height: 96%;
   background:
     linear-gradient(
     0deg,
@@ -441,7 +442,7 @@ header.spaces {
   background-position: center;
 }
 header.training {
-  height: 90%;
+  height: 96%;
   background:
     linear-gradient(
     0deg,
@@ -459,7 +460,7 @@ header.training {
   background-position: center;
 }
 header.exams {
-  height: 90%;
+  height: 96%;
   background:
     linear-gradient(
     -45deg,
@@ -475,7 +476,7 @@ header.exams {
   background-position: center;
 }
 header.small-biz {
-  height: 95%;
+  height: 96%;
   background:
     linear-gradient(
     -45deg,
@@ -836,7 +837,7 @@ header .header-content .header-content-inner p {
     border-radius: 1rem;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     
-    padding: 2rem;
+    padding: 3rem;
     transition: transform 0.35s ease;
 }
 .card:hover {
@@ -846,7 +847,7 @@ header .header-content .header-content-inner p {
 .card h2 {
     font-size: 4rem;
     text-align: center;
-    line-height: 3rem; 
+    line-height: 4rem; 
     color: var(--primary-text);
 
     font-family: 'keystone-font-medium', serif;
@@ -854,16 +855,16 @@ header .header-content .header-content-inner p {
     font-style: normal;
 
     margin-top: 1rem;
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
 }
 .card p {
     text-align: justify;
     line-height: 3rem; 
-    color: var(--secondary);
+    color: var(--accent-text);
     font-family: 'keystone-font-regular', serif;
     
     font-weight: 400;
-    font-size: 1.8rem; 
+    font-size: 2rem; 
     
     margin-top: 1.5rem;
     margin-bottom: 1.5rem;
@@ -878,7 +879,7 @@ header .header-content .header-content-inner p {
     font-family: 'keystone-font-regular', serif;
     
     text-align: left;
-    font-size: 1.6rem;
+    font-size: 1.8rem;
     
     margin-top: 1rem;
     margin-bottom: 1rem;
@@ -948,10 +949,6 @@ fieldset[disabled] .btn-primary.active {
 }
 
 /* Secondary Button */
-.btn-secondary .badge {
-  color: var(--primary-dark);
-  background-color: var(--white);
-}
 .btn-secondary {
   font-family: 'keystone-font-bold', sans-serif;
   color: var(--primary-text);
@@ -1050,8 +1047,8 @@ fieldset[disabled] .btn-default.active {
   border-color: #ededed;
 }
 .btn-default .badge {
-  color: white;
-  background-color: #222222;
+  color: var(--white);
+  background-color: var(--black);
 }
 .btn {
   font-family: 'keystone-font-bold', sans-serif;
